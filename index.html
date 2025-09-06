@@ -1,16 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Earth</title>
-    <link rel="shortcut icon" href="./assets/about.png" type="image/x-icon">
-     <!-- daisy ui and tailwind cdn -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./assets/about.png" type="image/x-icon" />
+    <!-- daisy ui and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f0fdf4]">
+    <header>
+      <!-- nav area -->
+      <nav
+        class="flex flex-col gap-4 md:flex-row justify-between bg-[#15803D] items-center p-4"
+      >
+        <div class="mx-32">
+          <h2
+            class="text-white font-semibold text-xl md:text-lg whitespace-nowrap"
+          >
+            Green Earth
+          </h2>
+        </div>
+        <!-- links -->
+        <div class="hidden md:flex gap-3 text-white">
+          <a href="">About</a>
+          <a href=""> Gallery</a>
+          <a href="" class="whitespace-nowrap"> Plant a Tree</a>
+        </div>
+        <div class="mx-32">
+          <button
+            class="btn btn-warning rounded-full text-[#15803D] whitespace-nowrap"
+          >
+            Plant a Tree
+          </button>
+        </div>
+      </nav>
 
-</head>
-<body>
-    
-</body>
+      <!-- banner section -->
+      <section
+        class="flex flex-col gap-5 md:flex-row justify-between bg-[#cff0dc]"
+      >
+        <div class="left-img w-24 md:w-40 lg:w-auto">
+          <img src="./assets/hero-leaf1.png" alt="" />
+        </div>
+        <div class="text-center my-auto">
+          <h1 class="text-2xl md:text-5xl font-bold whitespace-nowrap">
+            Plant a Tree, Grow a Future
+          </h1>
+          <p class="mt-3">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <button
+            class="btn btn-warning rounded-full text-[#15803D] whitespace-nowrap mt-5 md:mb-2 lg:mt-4"
+          >
+            Get Involved
+          </button>
+        </div>
+        <div class="w-24 md:w-40 lg:w-auto">
+          <img src="./assets/hero-leaf2.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- middle section -->
+      <section class="w-11/12">
+        <div class="mt-3">
+          <h2 class="font-bold text-2xl py-2 text-center">Choose Your Trees</h2>
+        </div>
+        <section class="flex flex-row justify-between gap-3">
+         
+          <!-- Catagories -->
+         
+          <div class="w-1/5">
+            <h3 class="font-bold">Catagories</h3>
+            <ul>
+              <li>item-1</li>
+              <li>item-2</li>
+              <li>item-3</li>
+              <li>item-4</li>
+              <li>item-5</li>
+              <li>item-6</li>
+              <li>item-7</li>
+              <li>item-8</li>
+              <li>item-9</li>
+              <li>item-10</li>
+              <li>item-11</li>
+            </ul>
+          </div>
+          <!-- card section -->
+          <section class="w-3/5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+              <div class="card bg-base-100 w-full shadow-sm p-2">
+                <div class="w-full h-48 bg-gray-200 rounded-md"></div>
+                <div class="card-body p-1">
+                  <h2 class="card-title">
+                    Mango Tree
+                  </h2>
+                  <p  class="text-sm text-gray-700 leading-relaxed">
+                    A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div class="bg-[#DCFCE7] badge">Fruit Tree</div>
+                    <div> ৳ 500 </div>
+                  </div>
+                   <div>
+                      <button class="btn btn-wide bg-[#15803D] text-white mt-3 rounded-3xl">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full shadow-sm p-2">
+                <div class="w-full h-48 bg-gray-200 rounded-md"></div>
+                <div class="card-body p-1">
+                  <h2 class="card-title">
+                    Mango Tree
+                  </h2>
+                  <p  class="text-sm text-gray-700 leading-relaxed">
+                    A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div class="bg-[#DCFCE7] badge">Fruit Tree</div>
+                    <div> ৳ 500 </div>
+                  </div>
+                   <div>
+                      <button class="btn btn-wide bg-[#15803D] text-white mt-3 rounded-3xl">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full shadow-sm p-2">
+                <div class="w-full h-48 bg-gray-200 rounded-md"></div>
+                <div class="card-body p-1">
+                  <h2 class="card-title">
+                    Mango Tree
+                  </h2>
+                  <p  class="text-sm text-gray-700 leading-relaxed">
+                    A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div class="bg-[#DCFCE7] badge">Fruit Tree</div>
+                    <div> ৳ 500 </div>
+                  </div>
+                   <div>
+                      <button class="btn btn-wide bg-[#15803D] text-white mt-3 rounded-3xl">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full shadow-sm p-2">
+                <div class="w-full h-48 bg-gray-200 rounded-md"></div>
+                <div class="card-body p-1">
+                  <h2 class="card-title">
+                    Mango Tree
+                  </h2>
+                  <p  class="text-sm text-gray-700 leading-relaxed">
+                    A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div class="bg-[#DCFCE7] badge">Fruit Tree</div>
+                    <div> ৳ 500 </div>
+                  </div>
+                   <div>
+                      <button class="btn btn-wide bg-[#15803D] text-white mt-3 rounded-3xl">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full shadow-sm p-2">
+                <div class="w-full h-48 bg-gray-200 rounded-md"></div>
+                <div class="card-body p-1">
+                  <h2 class="card-title">
+                    Mango Tree
+                  </h2>
+                  <p  class="text-sm text-gray-700 leading-relaxed">
+                    A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div class="bg-[#DCFCE7] badge">Fruit Tree</div>
+                    <div> ৳ 500 </div>
+                  </div>
+                   <div>
+                      <button class="btn btn-wide bg-[#15803D] text-white mt-3 rounded-3xl">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full shadow-sm p-2">
+                <div class="w-full h-48 bg-gray-200 rounded-md"></div>
+                <div class="card-body p-1">
+                  <h2 class="card-title">
+                    Mango Tree
+                  </h2>
+                  <p  class="text-sm text-gray-700 leading-relaxed">
+                    A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div class="bg-[#DCFCE7] badge">Fruit Tree</div>
+                    <div> ৳ 500 </div>
+                  </div>
+                   <div>
+                      <button class="btn btn-wide bg-[#15803D] text-white mt-3 rounded-3xl">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- your cart section -->
+           <div class="bg-white w-1/5 ">
+            <h2 class="font-bold p-2">your cart</h2>
+            <div class="cart bg-[#F0FDF4] p-2 mx-2">
+              <div>
+                <h5>Mango Tree</h5>
+                <p>৳500 x 1</p>
+              </div>
+            </div>
+           </div>
+        </section>
+      </section>
+      <!-- bottom section -->
+       <section class=" w-[95%] md:w-3/5 mx-auto mt-8" >
+     <div>
+         <h1 class="font-bold text-center text-2xl">About the Campaign</h1>
+        <div class="flex flex-col lg:flex-row items-center justify-center mt-5">
+          <div class="w-full md:w-2/5">
+          <img src="./assets/about.png"  class="w-full h-auto  rounded-md" alt="">
+        </div>
+        <div class="md:ml-5 md:mt-3 w-full md:w-3/5 text-justify">
+          <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+          <ul class="list-disc ml-3 mt-5">
+          <li>Restoration of natural habitats</li>
+          <li>Restoration of natural habitats</li>
+          <li>Restoration of natural habitats</li>
+        </ul>
+        </div>
+       </div>
+     </div>
+       </section>
+    </main>
+  </body>
 </html>
