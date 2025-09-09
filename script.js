@@ -15,8 +15,8 @@ const displayModal = (plant)=>{
     <div class="card-body p-2">
       <h2 class="card-title">${plant.name}</h2>
       <p class="text-sm text-gray-700 leading-relaxed">${plant.description}</p>
-      <div class="card-actions justify-between">
-        <div class="bg-[#DCFCE7] badge">${plant.category}</div>
+      <div class="card-actions flex justify-between">
+        <div class="bg-[#DCFCE7] badge p-1">${plant.category}</div>
         <div class="font-bold">&#2547; ${plant.price}</div>
       </div>
     </div>
@@ -56,10 +56,10 @@ displayPlantsCards = (cards)=> {
         const cardDiv = document.createElement("div")
         cardDiv.innerHTML = `
          <div class="card bg-base-100 w-full shadow-sm p-2 h-full md:h-[500px] flex flex-col">
-                <div class="w-full h-auto bg-gray-200 rounded-md">
+                 <div class="w-full h-auto bg-gray-200 rounded-md">
                   <img src= "${card.image}" alt="" class="w-full h-40 object-cover rounded-lg">
                 </div>
-                <div class="card-body p-1">
+                <div class="card-body px-1">
                   <h2 class="card-title"> ${card.name} </h2>
                   <p class="text-sm text-gray-700 leading-snug text-justify">
                     ${card.description}
@@ -70,7 +70,7 @@ displayPlantsCards = (cards)=> {
                   </div>
                   <div>
                     <button
-                      class="btn btn-wide bg-[#15803D] text-white mt-2 rounded-3xl add-cart-btn"
+                      class="btn btn-wide bg-[#15803D] text-white mt-3 whitespace-nowrap rounded-3xl add-cart-btn"
                     >
                       Add to Cart
                     </button>
