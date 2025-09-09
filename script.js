@@ -3,7 +3,7 @@ const openModal = (id)=>{
   fetch(`https://openapi.programming-hero.com/api/plant/${id}`)
   .then((res) => res.json())
   .then((data) => displayModal(data.plants))
-}
+};
 const displayModal = (plant)=>{
   const detailsContainer = document.getElementById("details-container")
   detailsContainer.innerHTML = `
@@ -25,7 +25,7 @@ const displayModal = (plant)=>{
 
   `
   document.getElementById("plants_modal").showModal()
-}
+};
 const manageSpinner = (status)=>{
   if(status == true){
     document.getElementById("spinner").classList.remove("hidden")
@@ -34,7 +34,7 @@ const manageSpinner = (status)=>{
      document.getElementById("plants-container").classList.remove("hidden")
     document.getElementById("spinner").classList.add("hidden")
   }
-}
+};
 
 //all plants
 const loadPlants = ()=>{
@@ -43,9 +43,9 @@ const loadPlants = ()=>{
       .then(res => res.json())
       .then(json => {
           displayPlantsCards(json.plants);
-          manageSpinner(false); // spinner hide এখানে
+          manageSpinner(false); 
       });
-}
+};
 loadPlants()
 
 displayPlantsCards = (cards)=> {
@@ -65,7 +65,7 @@ displayPlantsCards = (cards)=> {
                     ${card.description}
                   </p>
                   <div class="card-actions flex flex-col md:flex-row justify-between">
-                    <div onclick ="openModal('${card.id}')" class="bg-[#DCFCE7] badge cursor-pointer"> ${card.category}</div>
+                    <div onclick ="openModal('${card.id}')" class="bg-[#DCFCE7] badge cursor-pointer whitespace-nowrap"> ${card.category}</div>
                     <div class ="price font-bold">&#2547; ${card.price} </div>
                   </div>
                   <div>
@@ -78,12 +78,11 @@ displayPlantsCards = (cards)=> {
                 </div>
               </div>
         `
-        // append into container
         cardContainer.append(cardDiv)
     }
       cartButtons ()
     
-}
+};
 //categories
 const loadCatagories = ()=>{
   fetch("https://openapi.programming-hero.com/api/categories")
@@ -116,7 +115,7 @@ const displayCategories = (allCategories) =>{
      })
      categoryContainer.append(categoryLi)
    }
-}
+};
 
 //cart section
 let cart = [];
@@ -156,7 +155,7 @@ const cartButtons = ()=>{
     showCart();
     })
   })
-}
+};
 
 
 
